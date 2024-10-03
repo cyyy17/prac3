@@ -1,0 +1,5 @@
+def jeepney_groups(passengers, p):
+    if not passengers:
+        return ()
+    else:
+        return ((passengers[:p]), *jeepney_groups(passengers[p:], p)) 
