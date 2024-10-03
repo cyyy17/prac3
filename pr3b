@@ -1,0 +1,4 @@
+def jeepney_groups(passengers, p):
+    return tuple(passengers[a:a+p]
+                 for a in range(len(passengers))
+                 if a%p == 0)
